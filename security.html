@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN OR SIGN UP</title>
+    <link rel="stylesheet" href="security.css">
+    <script src="security.js"></script>
+    
+    
+<body>
+    <section>
+        <div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"> SIGN UP</h1>
+  <p id="decription" class="description-text-center">
+    <b>Already have an account?</b> 
+    <b class="login"><a href="login.html">LOG IN</a></b>
+    </p>
+  </header>
+<form  id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+  <input
+     type="text"
+     name="name"
+     id="name"
+     class="form-control"
+     placeholder="Enter your name" required
+      />
+  </div>
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+<input 
+  type="email"
+  name="email"
+  id="email"
+  class="form-control"
+  placeholder="Enter your email" required
+ />
+    </div>
+ <div class="form-group">
+   <label id="number-label" for="number">Age<span class="clue"></span></label>
+<input
+  type="number"
+   name="age"
+   id="number"
+   min="16"
+   max="99"
+   class="form-control"
+   placeholder="Age"
+/>
+  </div>
+<div class="form-group">
+  <p>Gender</p>
+<select id="dropdown"name="gender"class="form-control"required>
+ <option disabled selected
+         value="gender"select your gender</option>
+ <option
+         value="Female">Female</option>
+<option
+        value="Male">Male</option>
+<option
+        value="preferno">Prefer not to say</option>   
+  </select>
+  </div>
+
+<div class="form-group">
+    <p>Mobile Number</p>
+    <form id="countries" onsubmit="process(event)" class="form-control" >
+        
+        <input id="phone" type="tel" name="phone" class="form-control" />
+       
+    
+    </form>
+
+<div class="form-group">
+ <button type="submit" id="submit"class="submit-button">
+  Submit 
+  </button>
+  </div>
+ <footer>&copy marviswilson500@gmail.com</footer>
+  </form>
+  
+  </div>
+   </section>
+    
+</body>
+</html>
